@@ -79,7 +79,7 @@ footer{background:#111827;color:#9ca3af;text-align:center;padding:25px;font-size
 </section><section>
 <div class="contact">
 <h2>Contacto</h2>
-<p>Email: contacto@consultafarmaceutica.com</p>
+<p>Email: aelipeg@gmail.com</p>
 <p>Las consultas se realizan online mediante cita previa.</p>
 </div>
 </section><footer>
