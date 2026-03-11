@@ -6,7 +6,15 @@
 <title>Consulta Farmacéutica Online | Nutrición y Revisión de Medicación</title>
 <meta name="description" content="Consulta farmacéutica online: nutrición, suplementos, dermocosmética y revisión de medicación profesional. Contacta con aelipeg@gmail.com">
 <meta name="robots" content="index, follow">
+
+<!-- Open Graph para compartir en redes -->
+<meta property="og:title" content="Consulta Farmacéutica Online">
+<meta property="og:description" content="Nutrición, suplementos, dermocosmética y revisión profesional de medicación">
+<meta property="og:image" content="https://images.unsplash.com/photo-1588776814546-ec7e9c9c4c33?auto=format&fit=crop&w=800&q=80">
+<meta property="og:type" content="website">
+
 <style>
+/* Diseño general */
 body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#f4f7fb;color:#1f2937;line-height:1.6}
 a{color:#2563eb;text-decoration:none}
 header{background:linear-gradient(135deg,#2563eb,#3b82f6);color:white;padding:80px 20px;text-align:center}
