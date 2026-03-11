@@ -31,3 +31,95 @@ footer{background:#111827;color:#9ca3af;text-align:center;padding:25px;font-size
 img{width:100%;border-radius:14px}
 @media(max-width:800px){.about{grid-template-columns:1fr}}
 </style>
+</head>
+<body>
+
+<header>
+<h1>Consulta Farmacéutica Online</h1>
+<p>Nutrición, suplementos, dermocosmética y revisión profesional de medicación</p>
+<div class="cta">
+<a href="https://wa.me/34625144845?text=Hola%20quiero%20reservar%20una%20consulta" target="_blank">
+<button>Reservar por WhatsApp</button>
+</a>
+</div>
+</header>
+
+<section>
+<div class="about">
+<div>
+<h2>Sobre mí</h2>
+<p>Soy farmacéutico titulado y ofrezco asesoramiento personalizado basado en evidencia científica. Mi objetivo es ayudarte a mejorar tu salud mediante una correcta nutrición, el uso adecuado de suplementos y la optimización segura de tu medicación.</p>
+<p>Las consultas se realizan de forma online mediante videollamada, de manera cómoda y confidencial.</p>
+</div>
+<div>
+<img src="https://images.unsplash.com/photo-1588776814546-ec7e9c9c4c33?auto=format&fit=crop&w=800&q=80" alt="Farmacéutico asesorando paciente">
+</div>
+</div>
+</section>
+
+<section>
+<h2>Servicios</h2>
+<div class="services">
+<div class="card">
+<h3>Nutrición</h3>
+<p>Evaluación de hábitos alimentarios y recomendaciones personalizadas para mejorar tu salud metabólica, digestiva y bienestar general.</p>
+</div>
+<div class="card">
+<h3>Suplementación</h3>
+<p>Asesoramiento independiente sobre vitaminas y suplementos basado en evidencia científica.</p>
+</div>
+<div class="card">
+<h3>Dermocosmética</h3>
+<p>Recomendaciones personalizadas para el cuidado de la piel, acné, envejecimiento y rutinas de skincare.</p>
+</div>
+<div class="card">
+<h3>Revisión de medicación</h3>
+<p>Análisis de tratamientos para mejorar adherencia, detectar duplicidades y optimizar el uso de medicamentos.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Cómo funciona</h2>
+<div class="steps">
+<div class="step">
+<h3>1. Solicita tu cita</h3>
+<p>Contacta mediante el botón de WhatsApp o formulario para solicitar tu consulta online.</p>
+</div>
+<div class="step">
+<h3>2. Consulta por videollamada</h3>
+<p>La sesión se realiza online de manera cómoda y privada.</p>
+</div>
+<div class="step">
+<h3>3. Recomendaciones personalizadas</h3>
+<p>Recibirás orientación profesional adaptada a tu situación.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Opiniones</h2>
+<div class="testimonials">
+<div class="testimonial">"La revisión de mi medicación me ayudó a entender mejor mi tratamiento."</div>
+<div class="testimonial">"Muy buen asesoramiento sobre suplementos y nutrición."</div>
+<div class="testimonial">"Consulta clara, profesional y fácil de seguir."</div>
+</div>
+</section>
+
+<section>
+<div class="contact">
+<h2>Contacto</h2>
+<p>Email: <a href="mailto:aelipeg@gmail.com">aelipeg@gmail.com</a></p>
+<a href="https://wa.me/34625144845?text=Hola%20quiero%20reservar%20una%20consulta" target="_blank">
+<button>Reservar por WhatsApp</button>
+</a>
+<p>Las consultas se realizan online mediante cita previa.</p>
+</div>
+</section>
+
+<footer>
+<p>Información sanitaria orientativa. Este servicio no sustituye la consulta médica.</p>
+</footer>
+
+</body>
+</html>
