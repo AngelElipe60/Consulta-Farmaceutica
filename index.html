@@ -23,7 +23,83 @@
 <meta name="twitter:description" content="Asesoramiento profesional online en nutrición, suplementación y revisión de medicación. Atención personalizada y segura.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/AngelElipe60/Consulta-Farmaceutica/main/1773182942527.png">
 
-<!-- CSS -->
+<!-- JSON-LD definitivo con todos los servicios -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Consulta Farmacéutica Online",
+  "url": "https://angelelipe60.github.io/Consulta-Farmaceutica/",
+  "logo": "https://raw.githubusercontent.com/AngelElipe60/Consulta-Farmaceutica/main/1773182942527.png",
+  "image": "https://raw.githubusercontent.com/AngelElipe60/Consulta-Farmaceutica/main/1773182942527.png",
+  "telephone": "+34625144845",
+  "priceRange": "30€-50€",
+  "areaServed": "ES",
+  "medicalSpecialty": ["Nutrition", "Pharmacy"],
+  "sameAs": ["https://youtube.com/channel/UCDDb7wsbE4SwzOxpXb_AQJw"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalService",
+          "name": "Nutrición",
+          "description": "Evaluación de hábitos alimentarios y recomendaciones personalizadas para mejorar la salud metabólica, digestiva y el bienestar general."
+        },
+        "price": "40€"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalService",
+          "name": "Suplementación",
+          "description": "Asesoramiento independiente sobre vitaminas, minerales y suplementos basado en evidencia científica."
+        },
+        "price": "35€"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalService",
+          "name": "Dermocosmética",
+          "description": "Recomendaciones personalizadas para el cuidado de la piel, acné, envejecimiento cutáneo y rutinas de skincare."
+        },
+        "price": "30€"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalService",
+          "name": "Revisión de medicación",
+          "description": "Análisis de tratamientos para mejorar la adherencia, detectar duplicidades y optimizar el uso de medicamentos."
+        },
+        "price": "45€"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalService",
+          "name": "Asesoría en hipertensión y diabetes",
+          "description": "Orientación personalizada para el control de presión arterial y glucosa."
+        },
+        "price": "50€"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalService",
+          "name": "Optimización del rendimiento físico",
+          "description": "Nutrición y suplementación para mejorar fuerza, resistencia y recuperación."
+        },
+        "price": "45€"
+      }
+    ]
+  }
+}
+</script>
+
 <style>
 body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#f4f7fb;color:#1f2937}
 header{background:linear-gradient(135deg,#1e3a8a,#2563eb);color:white;padding:80px 20px;text-align:center}
@@ -45,6 +121,8 @@ h2{font-size:30px;margin-bottom:25px;color:#1e3a8a}
 .contact{background:#1e3a8a;color:white;border-radius:18px;padding:50px;text-align:center}
 .contact a{color:white;text-decoration:underline}
 footer{background:#111827;color:#9ca3af;text-align:center;padding:25px;font-size:14px}
+
+/* Botones flotantes */
 .fab-whatsapp{position:fixed;bottom:25px;right:25px;background:#25d366;color:white;border-radius:50%;width:60px;height:60px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:30px;box-shadow:0 6px 20px rgba(0,0,0,0.3)}
 .fab-whatsapp:hover{transform:scale(1.1)}
 .fab-youtube{position:fixed;bottom:100px;right:25px;background:#FF0000;color:white;border-radius:50%;padding:10px 15px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:18px;box-shadow:0 6px 20px rgba(0,0,0,0.3)}
@@ -52,28 +130,9 @@ footer{background:#111827;color:#9ca3af;text-align:center;padding:25px;font-size
 .fab-youtube:hover{transform:scale(1.05)}
 @media(max-width:800px){.about{grid-template-columns:1fr}}
 </style>
-
-<!-- JSON-LD para Google -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Consulta Farmacéutica Online",
-  "description": "Consulta farmacéutica online con asesoramiento profesional en nutrición, suplementación, dermocosmética y revisión de medicación.",
-  "url": "https://angelelipe60.github.io/Consulta-Farmaceutica/",
-  "logo": "https://raw.githubusercontent.com/AngelElipe60/Consulta-Farmaceutica/main/1773182942527.png",
-  "image": "https://raw.githubusercontent.com/AngelElipe60/Consulta-Farmaceutica/main/1773182942527.png",
-  "telephone": "+34625144845",
-  "priceRange": "30€-50€",
-  "areaServed": "ES",
-  "medicalSpecialty": ["Nutrition", "Pharmacy"],
-  "sameAs": ["https://youtube.com/channel/UCDDb7wsbE4SwzOxpXb_AQJw"]
-}
-</script>
-
 </head>
-<body>
 
+<body>
 <header>
   <h1>Consulta Farmacéutica Online</h1>
   <p>Nutrición, suplementación, dermocosmética y revisión profesional de medicación</p>
