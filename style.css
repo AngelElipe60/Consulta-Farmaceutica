@@ -6,27 +6,28 @@ body {
   color: #1f2937;
 }
 
+/* Header */
 header {
   background: linear-gradient(135deg, #1e3a8a, #2563eb);
   color: white;
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
-
 header h1 {
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
-
-header p {
-  font-size: 18px;
-  opacity: 0.9;
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 600;
+}
+header nav a:hover {
+  text-decoration: underline;
 }
 
-.cta {
-  margin-top: 25px;
-}
-
+/* Buttons */
 button {
   background: white;
   color: #1e3a8a;
@@ -37,15 +38,21 @@ button {
   font-weight: 600;
   cursor: pointer;
 }
+button:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
 
+/* Sections */
 section {
   max-width: 1100px;
   margin: auto;
-  padding: 70px 20px;
+  padding: 60px 20px;
 }
 
+/* Titles */
 h2 {
-  font-size: 30px;
+  font-size: 28px;
   margin-bottom: 25px;
   color: #1e3a8a;
 }
@@ -64,19 +71,16 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 25px;
 }
-
 .card {
   background: white;
   padding: 25px;
   border-radius: 14px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
   transition: 0.2s;
 }
-
 .card:hover {
   transform: translateY(-4px);
 }
-
 .card h3 {
   margin-top: 0;
   color: #1e3a8a;
@@ -88,12 +92,11 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
 }
-
 .step {
   background: white;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* Testimonials */
@@ -102,12 +105,11 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
-
 .testimonial {
   background: white;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   font-style: italic;
 }
 
@@ -119,7 +121,6 @@ h2 {
   padding: 50px;
   text-align: center;
 }
-
 .contact a {
   color: white;
   text-decoration: underline;
@@ -134,7 +135,7 @@ footer {
   font-size: 14px;
 }
 
-/* Botones flotantes */
+/* Floating buttons */
 .fab-whatsapp {
   position: fixed;
   bottom: 25px;
@@ -148,9 +149,12 @@ footer {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 30px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-  z-index: 999;
+  font-size: 28px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.fab-whatsapp:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .fab-youtube {
@@ -160,23 +164,25 @@ footer {
   background: #FF0000;
   color: white;
   border-radius: 50%;
-  padding: 10px 15px;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  font-size: 18px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-  z-index: 999;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
-
 .fab-youtube span {
-  margin-left: 8px;
+  margin-left: 6px;
   font-weight: bold;
+}
+.fab-youtube:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
 }
 
 /* Responsive */
-@media (max-width: 800px) {
+@media(max-width:800px) {
   .about {
     grid-template-columns: 1fr;
   }
