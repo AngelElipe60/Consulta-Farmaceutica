@@ -1,11 +1,4 @@
-# Bloqueamos directorios innecesarios (si los hubiera)
-User-agent: *
-Disallow: /node_modules/
-Disallow: /cgi-bin/
-
-# Permitimos todo lo demás
 User-agent: *
 Allow: /
 
-# Indicamos la ubicación del sitemap
 Sitemap: https://angelelipe60.github.io/Consulta-Farmaceutica/sitemap.xml
