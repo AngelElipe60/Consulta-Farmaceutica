@@ -1,52 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <!-- Página principal -->
+
+  <!-- Página principal de la web -->
   <url>
     <loc>https://angelelipe60.github.io/Consulta-Farmaceutica/</loc>
     <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-
-  <!-- Sección sobre mí -->
-  <url>
-    <loc>https://angelelipe60.github.io/Consulta-Farmaceutica/#sobre-mi</loc>
-    <lastmod>2026-03-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Sección servicios -->
-  <url>
-    <loc>https://angelelipe60.github.io/Consulta-Farmaceutica/#servicios</loc>
-    <lastmod>2026-03-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Sección cómo funciona -->
-  <url>
-    <loc>https://angelelipe60.github.io/Consulta-Farmaceutica/#como-funciona</loc>
-    <lastmod>2026-03-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Sección opiniones -->
-  <url>
-    <loc>https://angelelipe60.github.io/Consulta-Farmaceutica/#opiniones</loc>
-    <lastmod>2026-03-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Sección contacto -->
-  <url>
-    <loc>https://angelelipe60.github.io/Consulta-Farmaceutica/#contacto</loc>
-    <lastmod>2026-03-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
 </urlset>
