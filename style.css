@@ -18,7 +18,7 @@ nav {
     background: white;
     padding: 15px;
     text-align: center;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -73,27 +73,19 @@ nav a {
     max-width: 600px;
 }
 
-/* SECCIÓN CONTENIDO */
-.contenido {
-    padding: 60px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-}
-
 /* SERVICIOS */
 .servicios {
     padding: 60px 20px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
 }
 
 .servicios .tarjeta {
     background: white;
     padding: 25px;
-    margin: 15px auto;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-    max-width: 350px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
 
 .servicios .tarjeta h3 {
@@ -108,10 +100,18 @@ nav a {
 }
 
 /* CÓMO FUNCIONA */
-.contenido ol {
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: left;
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.step {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
 }
 
 /* OPINIONES */
@@ -122,12 +122,13 @@ nav a {
 
 .opiniones .opinion {
     background: white;
-    padding: 20px;
+    padding: 25px;
     margin: 15px auto;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
     max-width: 500px;
     font-style: italic;
+    font-size: 16px;
 }
 
 /* WHATSAPP */
@@ -137,20 +138,22 @@ nav a {
     right: 20px;
     background: #25D366;
     color: white;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 32px;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
     transition: 0.3s;
+    z-index: 200;
 }
 
 .whatsapp:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
 }
 
 /* FOOTER */
@@ -172,13 +175,12 @@ footer a:hover {
 }
 
 /* RESPONSIVE */
-@media(max-width: 800px) {
+@media(max-width:800px){
     .perfil {
         flex-direction: column;
         text-align: center;
     }
-
-    .contenido ol {
-        text-align: center;
+    .steps {
+        grid-template-columns: 1fr;
     }
 }
