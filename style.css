@@ -1,137 +1,111 @@
-/* GENERAL */
+/* Reset y fuentes */
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     margin: 0;
-    background: #f5f7fb;
+    background: #f4f7fb;
     color: #1f2937;
 }
 
-/* PORTADA */
+/* Hero portada centrada */
+.hero {
+    position: relative;
+    text-align: center;
+}
 .hero img {
     width: 100%;
     height: auto;
     display: block;
 }
-
-/* MENÚ */
-nav {
-    background: white;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav a {
-    margin: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #333;
-}
-
-/* INTRO */
-.intro {
-    text-align: center;
-    padding: 50px;
-    background: white;
-}
-
-.boton {
-    background: #2c7be5;
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    padding: 15px 35px;
-    text-decoration: none;
-    border-radius: 6px;
+    max-width: 90%;
+}
+.hero-text h1 {
+    font-size: 48px;
+    margin: 0 0 10px 0;
+}
+.hero-text .advertencia {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* Botones hero */
+.boton {
     display: inline-block;
-    margin-top: 20px;
+    background: #1e3a8a;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
     transition: 0.3s;
 }
-
 .boton:hover {
-    background: #1e59b6;
+    background: #2563eb;
 }
 
-/* PERFIL SOBRE MÍ */
-.perfil {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 50px;
-    flex-wrap: wrap;
+/* Navegación */
+nav {
+    background: #1e3a8a;
+    text-align: center;
+    padding: 15px 0;
 }
-
-.perfil .foto {
-    max-width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-.perfil div {
-    max-width: 600px;
-}
-
-/* SERVICIOS */
-.servicios {
-    padding: 60px 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 25px;
-}
-
-.servicios .tarjeta {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-}
-
-.servicios .tarjeta h3 {
-    color: #1e3a8a;
-}
-
-.servicios .tarjeta .precio {
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
     font-weight: bold;
-    color: #2c7be5;
-    margin-top: 10px;
-    font-size: 18px;
+}
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* CÓMO FUNCIONA */
-.steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 25px;
-    padding: 40px 20px;
-}
-
-.step {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-}
-
-/* OPINIONES */
-.opiniones {
-    padding: 50px 20px;
+/* Secciones */
+.intro, .contenido, .perfil, .servicios, .opiniones {
+    max-width: 900px;
+    margin: 50px auto;
     text-align: center;
 }
 
-.opiniones .opinion {
+/* Servicios tarjetas */
+.tarjeta {
     background: white;
     padding: 25px;
-    margin: 15px auto;
+    margin: 15px;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-    max-width: 500px;
-    font-style: italic;
-    font-size: 16px;
+}
+.tarjeta h3 {
+    color: #1e3a8a;
+}
+.precio {
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-/* WHATSAPP */
+/* Opiniones */
+.opinion {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    font-style: italic;
+}
+
+/* Foto de perfil */
+.foto {
+    max-width: 300px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+/* Botón flotante WhatsApp */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -150,37 +124,59 @@ nav a {
     transition: 0.3s;
     z-index: 200;
 }
-
 .whatsapp:hover {
     transform: scale(1.15);
     box-shadow: 0 8px 20px rgba(0,0,0,0.45);
 }
 
-/* FOOTER */
+/* Botón flotante YouTube */
+.youtube {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: 0.3s;
+}
+.youtube img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+}
+.youtube:hover img {
+    transform: scale(1.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+}
+
+/* Footer con advertencia médica */
 footer {
-    background: #1e2a38;
-    color: white;
+    background: #111827;
+    color: #9ca3af;
     text-align: center;
     padding: 25px;
 }
-
 footer a {
     color: #2c7be5;
     text-decoration: none;
     font-weight: bold;
 }
-
 footer a:hover {
     text-decoration: underline;
 }
+footer .advertencia-footer {
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.8;
+}
 
-/* RESPONSIVE */
+/* Responsive */
 @media(max-width:800px){
-    .perfil {
-        flex-direction: column;
-        text-align: center;
-    }
-    .steps {
-        grid-template-columns: 1fr;
-    }
+    .hero-text h1{font-size:36px;}
+    .hero-text .advertencia{font-size:14px;}
+    .tarjeta, .opinion{margin:10px;}
 }
