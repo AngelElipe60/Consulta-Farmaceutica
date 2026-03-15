@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: 
 
-Sitemap: https://angelelipe60.github.io/Consulta-Farmaceutica/sitemap.xml
+Sitemap: https://angelelipe60.github.io/Consulta-Farmaceutica/sitemap.xmlu
